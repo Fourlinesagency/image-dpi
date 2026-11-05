@@ -1,0 +1,18 @@
+{
+  "name": "image-dpi",
+  "version": "1.0.0",
+  "description": "Read and change the DPI of JPEG and PNG files by rewriting header fields only (JFIF, EXIF, Photoshop, pHYs). Pixels are copied byte for byte. No dependencies.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "src"],
+  "scripts": { "build": "tsc", "test": "node test/test.mjs" },
+  "keywords": ["dpi","ppi","jpeg","png","exif","jfif","phys","print","resolution"],
+  "author": "Fourlines Agency (https://fourlinesagency.com)",
+  "homepage": "https://prepmypost.com/change-dpi-of-image",
+  "repository": { "type": "git", "url": "git+https://github.com/Fourlinesagency/image-dpi.git" },
+  "license": "MIT",
+  "engines": { "node": ">=22.18" },
+  "devDependencies": { "typescript": "^6.0.0" }
+}
